@@ -1,0 +1,14 @@
+{
+  "name": "Retail Sales Clean",
+  "dataColors": [
+    "#2463A6",
+    "#E07A3F",
+    "#4C956C",
+    "#8A6FB0",
+    "#D4A72C",
+    "#5B8E9B"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#243447",
+  "tableAccent": "#2463A6"
+}

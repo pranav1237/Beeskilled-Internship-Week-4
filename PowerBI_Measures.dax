@@ -1,0 +1,11 @@
+-- Create these measures after importing retail_sales_cleaned.csv as SalesData
+Total Sales = SUM(SalesData[Sales])
+Total Profit = SUM(SalesData[Profit])
+Total Orders = DISTINCTCOUNT(SalesData[Order_ID])
+Average Order Value = DIVIDE([Total Sales], [Total Orders])
+Profit Margin = DIVIDE([Total Profit], [Total Sales])
+Units Sold = SUM(SalesData[Quantity])
+Average Discount = AVERAGE(SalesData[Discount])
+Sales YTD = TOTALYTD([Total Sales], SalesData[Order_Date])
+Sales Previous Year = CALCULATE([Total Sales], SAMEPERIODLASTYEAR(SalesData[Order_Date]))
+Sales YoY % = DIVIDE([Total Sales]-[Sales Previous Year], [Sales Previous Year])
